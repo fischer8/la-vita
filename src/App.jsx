@@ -1,7 +1,8 @@
+import React from 'react';
 import Header from './Components/Header';
 import Main from './Components/Main';
+import DialogBox from './Components/DialogBox';
 import './App.css';
-import React from 'react';
 
 class App extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class App extends React.Component {
       <section>
         <Header />
         <Main />
+        <DialogBox />
       </section>
     );
   }
