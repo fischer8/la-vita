@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../images/elementos/lavita_logotipo branco.png';
-import cover from '../images/elementos/lavita_barquinhos_semreboco.png';
 import TopNav from './TopNav';
+import PropTypes from 'prop-types';
 
 class Header extends React.Component {
   render() {
+    const { logo, cover } = this.props  
     return (
       <header>
         <TopNav />
@@ -13,6 +13,11 @@ class Header extends React.Component {
       </header>
     );
   }
+}
+
+Header.propTypes = {
+  logo: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
 }
 
 export default Header;
