@@ -8,8 +8,17 @@ body {
   font-family: "Poppins", Sans-serif;
 }
 
+.zap-button {
+  position: fixed;
+  right: 15px;
+  width: 60px;
+  bottom: 5vh;
+  z-index: 100;
+  cursor: pointer;
+}
+
 header {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .top-logo {
@@ -19,11 +28,9 @@ header {
 }
 
 .nav-container {
-  /* border: 1px solid red; */
   width: 60%;
   font-size: 1.5rem;
   position: absolute;
-  /* margin-top: 1em; */
   display: flex;
   justify-content: space-between;
   right: 4%;
@@ -47,13 +54,12 @@ header {
   text-shadow: black 5px;
 }
 
-
 .top-cover {
   width: 100%;
 }
 
 .main-title {
-  margin-left: 7vw;
+  margin-left: 12vw;
   font-size: 40px;
 }
 
@@ -64,58 +70,50 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-top: 10px;
-  /* border: solid 1px red; */
+  margin-bottom: 40px;
 }
 
-
 .main-photos {
-  max-width: 40%;
-  margin: 30px;
+  max-width: 35%;
+  margin: 40px 20px;
 }
 
 .dialog-box {
   text-align: center;
   background: linear-gradient(72deg, #1570bb62 30%, #43bbed 40%, #156fbb 90%);
   border-radius: 10px;
-
-  height: 160px;
-  width: 90%;
+  height: 300px;
+  width: 80%;
   margin: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  /* border: solid 1px red; */
+  margin-bottom: 30px;
   position: relative;
 }
 
-
 .dialog-text {
-  /* border: solid 1px red; */
-  /* width: 40vw; */
+  width: 42vw;
   position: absolute;
-  /* display: block; */
   color: aliceblue;
   font-weight: bolder;
   z-index: 99;
   top: 50%;
   left: 6%;
-  right: 40%;
   transform: translateY(-50%);
 }
 
 .dialog-title {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .dialog-buttons {
-  height: 133px;
+  height: 123px;
   position: absolute;
   left: 65%;
-  right: 7%;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
@@ -124,22 +122,25 @@ p {
 
 .contact-button {
   margin-bottom: 3px;
+  font-size: medium;
+}
+
+.location-button {
+  font-size: medium;
 }
 
 .contact-button, .location-button {
   background-color: #fac16b;
   opacity: 0.9;
   font-weight: bolder;
-  line-height: 65px;
-  height: 65px;
+  line-height: 60px;
+  height: 60px;
   border-radius: 13px;
   text-decoration: none;
   display: block;
   color: black;
   width: 100%;
   padding: 0px 10px;
-  font-size: large;
-  /* white-space: nowrap; */
 }
 
 .contact-button:hover, .location-button:hover {
@@ -150,5 +151,92 @@ p {
 }
 
 .footer {
+  border: 1px solid red;
+  display: flex;
+  margin-top: 70px;
   background-color: #2e6267;
+  height: 340px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  /* position: absolute; */
+  top: 50%;
+  max-width: 340px;
+  width: 40%;
+  /* transform: translateY(-50%); */
+}
+
+.footer-article-container {
+  /* left: 40vw; */
+  top: 50%;
+  height: 100px;
+  text-align: center;
+  /* border: 1px solid red; */
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.footer-address {
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  font-weight: 100;
+}
+
+.footer-button {
+  background-color: #2e6267;
+  border: 2px solid rgba(255, 255, 255, 0.548);
+  font-weight: 900;
+  padding: 6%;
+  opacity: 0.8;
+  width: 150px;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1px;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  background-color: #2b595e;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.footer-nav-container {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: fit-content;
+  /* border: 1px solid red; */
+  transform: translateY(-50%);
+  width: 23vw;
+}
+
+.footer-nav {
+  /* width: 23vw; */
+  /* margin-top: 20px; */
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-nav-opts {
+  font-size: large;
+  margin: 15px;
+}
+
+.copyright-container {
+  text-align: center;
+  height: 40px;
+  background-color: #e7ab7d;
+}
+
+.copyright-text {
+  color: black;
+  font-weight: 900;
+  line-height: 40px;
 }
