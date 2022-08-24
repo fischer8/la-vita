@@ -76,7 +76,6 @@ header {
 
 .dialog-box {
   text-align: center;
-  /* background-color: #43baed00; */
   background: linear-gradient(72deg, #1570bb62 30%, #43bbed 40%, #156fbb 90%);
   border-radius: 10px;
 
@@ -113,7 +112,6 @@ p {
 }
 
 .dialog-buttons {
-  /* border: 1px solid red; */
   height: 133px;
   position: absolute;
   left: 65%;
@@ -141,7 +139,6 @@ p {
   width: 100%;
   padding: 0px 10px;
   font-size: large;
-  /* max-width: 290px; */
   /* white-space: nowrap; */
 }
 
