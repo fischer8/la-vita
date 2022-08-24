@@ -1,5 +1,5 @@
 import React from 'react';
-import TopNav from './TopNav';
+import HeaderNav from './HeaderNav';
 import PropTypes from 'prop-types';
 
 class Header extends React.Component {
@@ -7,7 +7,7 @@ class Header extends React.Component {
     const { logo, cover } = this.props  
     return (
       <header>
-        <TopNav />
+        <HeaderNav />
         <img className='top-logo' src={ logo } alt="" />
         <img className='top-cover' src={ cover } alt="" />
       </header>

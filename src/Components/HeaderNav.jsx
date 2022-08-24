@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TopNav extends React.Component {
+class HeaderNav extends React.Component {
   render() {
     const navOpts = ['Home','Suítes','Fotos','Contato'];
     const options = navOpts.map((opt) => <span className="nav-opts">{opt}</span>)
@@ -12,4 +12,4 @@ class TopNav extends React.Component {
   }
 }
 
-export default TopNav;
+export default HeaderNav;
