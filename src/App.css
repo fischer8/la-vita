@@ -287,15 +287,11 @@ p {
     /* text-align: center; */
     /* position: relative; */
     /* height: fit-content; */
-    transform: none;
-    /* border: 1px solid red; */
+    transform: unset;
     margin: 30px 0px;
     min-width: 200px;
-    /* box-sizing: border-box; */
   }
   .footer-nav {
-    /* display: flex; */
-    /* align-items: center; */
     flex-direction: row;
   }
   .footer-nav-title {
@@ -310,7 +306,6 @@ p {
     margin-bottom: 40px;
   }
   .dialog-buttons {
-    /* width: 280px; */
     max-width: none;
     width: 50%;
   }
