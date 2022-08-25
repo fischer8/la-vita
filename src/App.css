@@ -253,7 +253,17 @@ p {
     max-width: 70%;
   }
   .dialog-box {
+    height: fit-content;
+    padding: 50px 0px;
     flex-direction: column;
+    box-shadow: unset;
+  }
+  .dialog-text {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .dialog-buttons {
+    width: fit-content;
   }
   .footer {
     align-items: center;
@@ -279,17 +289,6 @@ p {
   .footer-nav-title {
     display: none;
   }
-  .dialog-box {
-    height: fit-content;
-    padding: 50px 0px;
-  }
-  .dialog-text {
-    width: 80%;
-    margin-bottom: 40px;
-  }
-  .dialog-buttons {
-    width: fit-content;
-  }
 }
 
 @media screen and (max-width: 740px) { 
@@ -308,6 +307,9 @@ p {
   main {
     text-align: center;
   }
+  .main-suites {
+    margin-top: unset;
+  }
   .main-title {
     margin-left: unset;
   }
@@ -316,9 +318,6 @@ p {
     width: 80%;
     margin: 40px none;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.308);
-  }
-  .main-suites {
-    margin-top: unset;
   }
 }
 
