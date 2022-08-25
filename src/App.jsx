@@ -5,19 +5,19 @@ import Main from './Components/Main';
 import DialogBox from './Components/DialogBox';
 import Footer from './Components/Footer';
 import Copyright from './Components/Copyright';
+import logo_img from './images/elementos/lavita_logo.webp';
+import header_img from './images/elementos/main_cover.webp';
 import './App.css';
-import logo_image from './images/elementos/lavita_logotipo branco.png';
-import header_image from './images/elementos/lavita_barquinhos_semreboco.png';
 
 class App extends React.Component {
   render() {
     return (
       <section>
         <ZapButton />
-        <Header cover={header_image} logo={logo_image} />
+        <Header cover={header_img} logo={logo_img} />
         <Main />
         <DialogBox />
-        <Footer logo={logo_image} />
+        <Footer logo={logo_img} />
         <Copyright />
       </section>
     );
