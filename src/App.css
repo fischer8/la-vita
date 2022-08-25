@@ -60,6 +60,7 @@ header {
 .main-title {
   margin-left: 12vw;
   font-size: 40px;
+  margin-bottom: 40px;
 }
 
 .main-suites {
@@ -75,7 +76,10 @@ header {
 
 .main-photos {
   max-width: 35%;
-  margin: 40px 20px;
+  /* min-width: 470px; */
+  /* margin: 40px 20px; */
+  margin: 0px 20px 60px 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.308);
 }
 
 .dialog-box {
@@ -88,17 +92,9 @@ header {
   margin-bottom: 30px;
   display: flex;
   position: relative;
-}
-
-.dialog-text {
-  width: 42vw;
-  position: absolute;
-  color: aliceblue;
-  font-weight: bolder;
-  z-index: 99;
-  top: 50%;
-  left: 6%;
-  transform: translateY(-50%);
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.63);
 }
 
 .dialog-title {
@@ -106,32 +102,33 @@ header {
   margin-bottom: 10px;
 }
 
+.dialog-text {
+  width: 42vw;
+  color: aliceblue;
+  font-weight: bolder;
+  z-index: 99;
+  top: 50%;
+  left: 6%;
+}
+
 p {
   font-size: 1.1rem;
 }
 
 .dialog-buttons {
-  height: 123px;
-  position: absolute;
-  left: 65%;
-  right: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
   max-width: 290px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 
 .contact-button {
   margin-bottom: 3px;
-  font-size: medium;
-}
-
-.location-button {
-  font-size: medium;
 }
 
 .contact-button, .location-button {
   background-color: #fac16b;
+  font-size: medium;
   opacity: 0.9;
   font-weight: bolder;
   line-height: 60px;
@@ -140,8 +137,10 @@ p {
   text-decoration: none;
   display: block;
   color: black;
-  width: 100%;
-  padding: 0px 10px;
+  min-width: 200px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+
+  /* padding: 0px 10px; */
 }
 
 .contact-button:hover, .location-button:hover {
@@ -152,7 +151,6 @@ p {
 }
 
 .footer {
-  border: 1px solid red;
   display: flex;
   margin-top: 70px;
   background-color: #2e6267;
@@ -258,8 +256,11 @@ p {
     flex-direction: column;
   }
   .main-photos {
-    max-width: 60%;
-    margin: 60px 20px;
+    max-width: 70%;
+    /* margin: 60px 20px; */
+  }
+  .dialog-box {
+    flex-direction: column;
   }
   .footer {
     /* vertical-align: middle; */
@@ -300,10 +301,49 @@ p {
   .footer-nav-title {
     display: none;
   }
+  .dialog-box {
+    height: fit-content;
+    padding: 50px 0px;
+  }
+  .dialog-text {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .dialog-buttons {
+    /* width: 280px; */
+    max-width: none;
+    width: 50%;
+  }
 }
 
-@media screen and (max-width: 835px) {
-
+@media screen and (max-width: 740px) { 
+  .top-logo {
+    position: absolute;
+    width: 50%;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nav-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    text-align: center;
+  }
+  .main-title {
+    margin-left: unset;
+  }
+  .main-photos {
+    max-width: none;
+    width: 80%;
+    margin: 40px none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.308);
+  }
+  .main-suites {
+    margin-top: unset;
+  }
 }
 
 
