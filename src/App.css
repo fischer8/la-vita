@@ -288,8 +288,7 @@ p {
     margin-bottom: 40px;
   }
   .dialog-buttons {
-    max-width: none;
-    width: 50%;
+    width: fit-content;
   }
 }
 
