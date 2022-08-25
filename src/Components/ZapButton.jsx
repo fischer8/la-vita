@@ -1,5 +1,5 @@
 import React from 'react';
-import zap_image from '../images/elementos/zap_icon_large.png'
+import zap_image from '../images/elementos/zap_icon.webp'
 
 class ZapButton extends React.Component {
   render() {
