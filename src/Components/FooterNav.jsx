@@ -6,7 +6,7 @@ class FooterNav extends React.Component {
     const options = navOpts.map((opt) => <span className="footer-nav-opts">{opt}</span>)
     return (
       <section className="footer-nav-container">
-        <h2>Menu</h2>
+        <h2 className="footer-nav-title">Explore</h2>
         <nav className="footer-nav">
           {options}
         </nav>
