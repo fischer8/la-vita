@@ -2,7 +2,7 @@ import React from 'react';
 import ZapButton from './ZapButton';
 import HandleNav from './HandleNav';
 
-class FloatButtons extends React.Component {
+export default class FloatButtons extends React.Component {
   render() {
     return (
       <section>
@@ -12,5 +12,3 @@ class FloatButtons extends React.Component {
     );
   }
 }
-
-export default FloatButtons;

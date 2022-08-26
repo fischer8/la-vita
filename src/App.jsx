@@ -9,7 +9,7 @@ import logo_img from './images/elementos/lavita_logo.webp';
 import header_img from './images/elementos/main_cover.webp';
 import './App.css';
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <section>
@@ -23,5 +23,3 @@ class App extends React.Component {
     );
   }
 }
-
-export default App;

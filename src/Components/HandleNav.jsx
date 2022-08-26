@@ -2,8 +2,7 @@ import React from 'react';
 import NavButton from './NavButton';
 import SideNav from './SideNav';
 
-
-class HandleNav extends React.Component {
+export default class HandleNav extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -11,7 +10,7 @@ class HandleNav extends React.Component {
     };
   }
   handleChange = () => {
-    this.setState({visible: !this.state.visible})
+    this.setState((oldState) => ({visible: !oldState.visible}))
   }
   render () {
     return (
@@ -21,5 +20,3 @@ class HandleNav extends React.Component {
     );
   }
 }
-
-export default HandleNav;

@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import FooterArticle from './FooterArticle';
 import FooterNav from './FooterNav';
 
-class Footer extends React.Component {
+export default class Footer extends React.Component {
   render() {
     const { logo } = this.props;
     return (
-      <footer className="footer">
-        <img className="footer-logo" src={logo} alt="" />
+      <footer className='footer'>
+        <img className='footer-logo' src={logo} alt='' />
         <FooterArticle />
         <FooterNav />
       </footer>
@@ -19,5 +19,3 @@ class Footer extends React.Component {
 Footer.propTypes = {
   logo: PropTypes.string.isRequired
 }
-
-export default Footer;

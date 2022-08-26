@@ -12,6 +12,7 @@ body {
   position: fixed;
   right: 15px;
   width: 60px;
+  max-width: 60px;
   bottom: 5vh;
   z-index: 100;
   cursor: pointer;
@@ -422,9 +423,5 @@ p {
     width: 80%;
     margin: 40px none;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.308);
-  }
-
-  .copyright-container {
-    display: none;
   }
 }
