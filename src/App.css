@@ -17,6 +17,11 @@ body {
   cursor: pointer;
 }
 
+.nav-button-oc {
+  all: unset;
+  display: none;
+}
+
 header {
   margin-bottom: 80px;
 }
@@ -268,6 +273,25 @@ p {
 }
 
 @media screen and (max-width: 740px) { 
+  .nav-button-oc {
+    display: block;
+    text-align: center;
+    padding: 6px 6px;
+    width: fit-content;
+    height: 48px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.637);
+    background: linear-gradient(72deg, #156fbb 1%, #43bbed 40%, #156fbb 90%);
+    opacity: 0.6;
+    cursor: pointer;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 100;
+    top: 50px;
+    right: 30px;
+  }
+  .hamb-img {
+    width: 48px;
+  }
   .top-logo {
     position: relative;
     width: 70%;

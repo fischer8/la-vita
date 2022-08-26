@@ -1,5 +1,5 @@
 import React from 'react';
-import ZapButton from './Components/ZapButton';
+import FloatButtons from './Components/FloatButtons';
 import Header from './Components/Header';
 import Main from './Components/Main';
 import DialogBox from './Components/DialogBox';
@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <section>
-        <ZapButton />
+        <FloatButtons />
         <Header cover={header_img} logo={logo_img} />
         <Main />
         <DialogBox />
