@@ -6,7 +6,7 @@ class Header extends React.Component {
   render() {
     const { logo, cover } = this.props  
     return (
-      <header>
+      <header id="Home">
         <HeaderNav />
         <img className='top-logo' src={ logo } alt="" />
         <img className='top-cover' src={ cover } alt="" />

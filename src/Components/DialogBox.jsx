@@ -5,7 +5,7 @@ import DialogButtons from './DialogButtons';
 class DialogBox extends React.Component {
   render () {
     return (
-      <article className="dialog-box">
+      <article className="dialog-box" id="Contato">
         <DialogText />
         <DialogButtons />
       </article>
