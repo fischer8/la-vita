@@ -1,13 +1,13 @@
 import React from 'react';
 import ZapButton from './ZapButton';
-import NavButton from './NavButton';
+import HandleNav from './HandleNav';
 
 class FloatButtons extends React.Component {
   render() {
     return (
       <section>
         <ZapButton />
-        <NavButton />
+        <HandleNav />
       </section>
     );
   }

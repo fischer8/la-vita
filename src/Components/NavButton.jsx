@@ -4,7 +4,7 @@ import hamb_icon from '../images/elementos/hamb_icon.webp'
 class NavButton extends React.Component {
   render () {
     return (
-      <button className="nav-button-oc">
+      <button className="nav-button-oc" onClick={this.props.handleChange}>
         <img className="hamb-img" src={hamb_icon} alt="" />
       </button>
     );
