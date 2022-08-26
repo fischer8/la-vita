@@ -4,16 +4,19 @@ import SideNav from './SideNav';
 
 
 class HandleNav extends React.Component {
-  state = {
-    visible: false
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      visible: false
+    };
+  }
   handleChange = () => {
     this.setState({visible: !this.state.visible})
   }
   render () {
     return (
       <section>
-        {this.state.visible ? <SideNav /> : <NavButton handleChange={this.handleChange} /> }
+        {this.state.visible ? <SideNav handleChange={this.handleChange} /> : <NavButton handleChange={this.handleChange}/> }
       </section>
     );
   }
