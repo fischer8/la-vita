@@ -12,7 +12,6 @@ body {
   position: fixed;
   right: 1vw;
   width: 10vh;
-  /* min-width: 8vh; */
   bottom: 5vw;
   z-index: 100;
   cursor: pointer;
@@ -321,7 +320,7 @@ p {
     position: fixed;
     right: 0px;
     height: 100%;
-    width: 40%;
+    width: 55%;
     z-index: 123;
     background-color: #238192ff;
   }
@@ -433,6 +432,23 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  .zap-button {
+    position: fixed;
+    right: 1vw;
+    width: 14vw;
+    bottom: 5vw;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .nav-button-oc {
+    padding: 1vw 1vw;
+    height: 12vw;
+    border-radius: 2vw;
+  }
+  .hamb-img {
+    width: 12vw;
+  }
+
   .main-title {
     margin-top: 40px;
   }
