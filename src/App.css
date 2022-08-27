@@ -10,9 +10,9 @@ body {
 
 .zap-button {
   position: fixed;
-  right: 15px;
-  width: 60px;
-  max-width: 60px;
+  right: 3vh;
+  width: 10vh;
+  /* min-width: 8vh; */
   bottom: 5vh;
   z-index: 100;
   cursor: pointer;
@@ -30,12 +30,13 @@ body {
 
 .close-nav-button {
   position: fixed;
-  right: 10px;
-  top: 10px;
-  height: 40px;
-  width: 40px;
+  right: 2vw;
+  top: 2vh;
+  font-size: 4vw;
+  height: 7vw;
+  width: 7vw;
   text-align: center;
-  line-height: 40px;
+  line-height: 7vw;
   cursor: pointer;
   background-color: rgba(43, 89, 102, 0.452);
 }
@@ -44,8 +45,9 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 30px;
-  height: 70%;
+  font-size: 4vh;
+  height: 70vh;
+  min-height: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,16 +60,12 @@ body {
 .side-nav-opts {
   text-align: center;
   width: 100%;
-  line-height: 10vh;
+  line-height: 12vh;
   cursor: pointer;
 }
 
-hr {
-  width: 80%;
-}
-
 header {
-  margin-bottom: 80px;
+  margin-bottom: 7vw;
 }
 
 .top-logo {
@@ -78,7 +76,7 @@ header {
 
 .nav-container {
   width: 60%;
-  font-size: 1.5rem;
+  font-size: 2vw;
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -89,9 +87,9 @@ header {
 
 .nav-opts {
   text-align: center;
-  line-height: 100px;
+  line-height: 15vh;
   width: 23%;
-  height: 130px;
+  height: 15vh;
   cursor: pointer;
   font-size: 140%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -108,9 +106,9 @@ header {
 }
 
 .main-title {
-  margin-left: 12vw;
-  font-size: 40px;
-  margin-bottom: 40px;
+  margin-left: 15vh;
+  font-size: 6vh;
+  margin-bottom: 5vw;
 }
 
 .main-suites {
@@ -127,7 +125,7 @@ header {
 .main-photos {
   cursor: pointer;
   max-width: 35%;
-  margin: 0px 20px 60px 20px;
+  margin: 0px 2vw 6vw 2vw;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.308);
 }
 
@@ -135,7 +133,8 @@ header {
   text-align: center;
   background: linear-gradient(72deg, #1570bb62 30%, #43bbed 40%, #156fbb 90%);
   border-radius: 10px;
-  height: 300px;
+  height: 15vw;
+  min-height: 300px;
   width: 80%;
   margin: auto;
   margin-bottom: 30px;
@@ -147,7 +146,7 @@ header {
 }
 
 .dialog-title {
-  font-size: 1.5rem;
+  font-size: 2.5vw;
   margin-bottom: 10px;
 }
 
@@ -161,14 +160,14 @@ header {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: clamp(18px,1.6vw,1.3em);
 }
 
 .dialog-buttons {
   max-width: 290px;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 20vw;
 }
 
 .contact-button {
@@ -187,7 +186,6 @@ p {
   text-decoration: none;
   display: block;
   color: black;
-  min-width: 200px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -217,12 +215,11 @@ p {
 
 .footer-article-container {
   top: 50%;
-  height: 150px;
+  height: 130px;
   text-align: center;
   transform: translateY(80%);
   position: relative;
 }
-
 
 .footer-address {
   font-family: 'Roboto', sans-serif;
@@ -298,7 +295,11 @@ p {
   line-height: 40px;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 137vh) {
+  .dialog-title {
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
   .main-suites {
     flex-direction: column;
   }
@@ -320,7 +321,7 @@ p {
   }
 
   .dialog-buttons {
-    width: fit-content;
+    width: 210px;
   }
 }
 
@@ -328,22 +329,22 @@ p {
   .nav-button-oc {
     display: block;
     text-align: center;
-    padding: 6px 6px;
+    padding: 1vh 1vh;
     width: fit-content;
-    height: 48px;
+    height: 8vh;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.637);
     background: linear-gradient(72deg, #156fbb 1%, #43bbed 40%, #156fbb 90%);
     opacity: 0.6;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 2vh;
     position: fixed;
     z-index: 123;
-    top: 50px;
-    right: 30px;
+    top: 5vw;
+    right: 3vw;
   }
 
   .hamb-img {
-    width: 48px;
+    width: 8vh;
   }
 
   .side-nav {
