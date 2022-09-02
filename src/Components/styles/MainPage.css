@@ -322,6 +322,7 @@ p {
     height: 100%;
     width: 55%;
     z-index: 123;
+    padding-bottom: 70px;
     background-color: #238192ff;
   }
 

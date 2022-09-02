@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 import NavButton from './NavButton';
 import SideNav from './SideNav';
 
-export default class HandleNav extends React.Component {
+export default class HandleNav extends Component {
   constructor(props) {
     super(props)
     this.state = {

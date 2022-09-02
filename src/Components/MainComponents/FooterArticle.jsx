@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-export default class FooterArticle extends React.Component {
+export default class FooterArticle extends Component {
   render () {
     const booking = 'https://www.booking.com/Share-UvH4byv';
     return (

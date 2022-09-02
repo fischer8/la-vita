@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 import ZapButton from './ZapButton';
 import HandleNav from './HandleNav';
 
-export default class FloatButtons extends React.Component {
+export default class FloatButtons extends Component {
   render() {
     return (
       <section>

@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-export default class Copyright extends React.Component {
+export default class Copyright extends Component {
   render () {
     return (
       <section className='copyright-container'>

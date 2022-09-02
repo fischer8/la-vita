@@ -1,7 +1,7 @@
-import React from 'react';
-import zap_image from '../images/elementos/zap_icon.webp'
+import { Component } from 'react';
+import zap_image from '../../images/elementos/zap_icon.webp'
 
-export default class ZapButton extends React.Component {
+export default class ZapButton extends Component {
   render () {
     const zapZap = 'https://api.whatsapp.com/send?phone=5511994352770';
     return (

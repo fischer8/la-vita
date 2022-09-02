@@ -1,9 +1,9 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import FooterArticle from './FooterArticle';
 import FooterNav from './FooterNav';
 
-export default class Footer extends React.Component {
+export default class Footer extends Component {
   render() {
     const { logo } = this.props;
     return (

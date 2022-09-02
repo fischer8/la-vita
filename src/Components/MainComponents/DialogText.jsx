@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-export default class DialogText extends React.Component {
+export default class DialogText extends Component {
   render() {
     return (
       <section className='dialog-text'>

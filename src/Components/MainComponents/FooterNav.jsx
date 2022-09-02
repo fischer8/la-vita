@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-export default class FooterNav extends React.Component {
+export default class FooterNav extends Component {
   render() {
     const navOpts = ['Home','Suítes','Fotos'];
     const options = navOpts.map((opt) => <span className='footer-nav-opts' key={opt}>{opt}</span>)

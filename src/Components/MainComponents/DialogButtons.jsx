@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-export default class DialogButtons extends React.Component {
+export default class DialogButtons extends Component {
   render () {
     const zapZap = 'https://api.whatsapp.com/send?phone=5511994352770';
     const location = 'https://goo.gl/maps/BBaptvShMhKwvunb6';

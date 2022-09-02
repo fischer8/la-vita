@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 import HeaderNav from './HeaderNav';
 import PropTypes from 'prop-types';
 
-export default class Header extends React.Component {
+export default class Header extends Component {
   render() {
     const { logo, cover } = this.props  
     return (

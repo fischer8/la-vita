@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-export default class SideNav extends React.Component {
+export default class SideNav extends Component {
   // componentDidMount() {
     // document.addEventListener("click", this.props.handleChange)
   // }

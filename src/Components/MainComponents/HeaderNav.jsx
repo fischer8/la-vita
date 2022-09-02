@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-export default class HeaderNav extends React.Component {
+export default class HeaderNav extends Component {
   render() {
     const navOpts = ['Home','Suítes','Fotos','Contato'];
     const options = navOpts.map((opt) => <span className='nav-opts' key={opt}>{opt}</span>)
