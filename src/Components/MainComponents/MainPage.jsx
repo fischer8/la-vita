@@ -7,7 +7,7 @@ import Footer from './Footer';
 import Copyright from './Copyright'
 import logo_img from '../../images/elementos/lavita_logo.webp';
 import header_img from '../../images/elementos/main_cover.webp';
-import '../styles/MainPage.css';
+import '../../styles/MainPage.css';
 
 export default class MainPage extends Component {
   render() {

@@ -2,7 +2,7 @@ import { Component } from 'react';
 import FloatButtons from '../MainComponents/FloatButtons';
 import HeaderNav from '../MainComponents/HeaderNav'
 import foto1 from '../../images/photos/pousada/intern_6.jpg'
-import '../styles/About.css'
+import '../../styles/About.css'
 
 export default class About extends Component {
   render() {
