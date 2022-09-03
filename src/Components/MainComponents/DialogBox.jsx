@@ -1,16 +1,14 @@
-import React from 'react';
+import { Component } from 'react';
 import DialogText from './DialogText';
 import DialogButtons from './DialogButtons';
 
-class DialogBox extends React.Component {
+export default class DialogBox extends Component {
   render () {
     return (
-      <article className="dialog-box">
+      <article className='dialog-box'>
         <DialogText />
         <DialogButtons />
       </article>
     );
   }
 }
-
-export default DialogBox;

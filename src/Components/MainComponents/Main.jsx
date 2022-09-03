@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component } from 'react';
 import Suites from './Suites';
 
-class Main extends React.Component {
+export default class Main extends Component {
   render() {
     return (
       <main>
@@ -11,5 +11,3 @@ class Main extends React.Component {
     );
   }
 }
-
-export default Main;

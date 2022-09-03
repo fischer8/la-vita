@@ -1,19 +1,17 @@
-import React from 'react';
-import Header from './Components/Header';
-import Main from './Components/Main';
-import DialogBox from './Components/DialogBox';
-import './App.css';
+import { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import MainPage from './Components/MainComponents/MainPage';
+import About from './Components/AboutComponents/About';
+import NotFound from './Components/NotFound/NotFound';
 
-class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
-      <section>
-        <Header />
-        <Main />
-        <DialogBox />
-      </section>
+      <Switch>
+        <Route exact path='/' component={MainPage} />
+        <Route exact path='/sobre' component={About} />
+        <Route path='*' component={NotFound}/>
+      </Switch>
     );
   }
 }
-
-export default App;

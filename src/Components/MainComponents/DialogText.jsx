@@ -1,10 +1,10 @@
-import React from 'react';
+import { Component } from 'react';
 
-class DialogText extends React.Component {
+export default class DialogText extends Component {
   render() {
     return (
-      <section className="dialog-text">
-      <h2 className="dialog-title">Suítes</h2>
+      <section className='dialog-text'>
+      <h2 className='dialog-title'>Suítes</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga harum itaque rem voluptatem eius quisquam amet
         labore rerum voluptatibus earum modi similique quia, repellendus velit suscipit, illum laborum quis quos magni.
@@ -14,5 +14,3 @@ class DialogText extends React.Component {
     );
   }
 }
-
-export default DialogText;
