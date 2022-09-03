@@ -164,6 +164,7 @@ p {
 
 .dialog-buttons {
   max-width: 290px;
+  min-width: 185px;
   display: flex;
   flex-direction: column;
   width: 20vw;
@@ -293,7 +294,46 @@ p {
   line-height: 40px;
 }
 
-@media screen and (max-width: 137vh) {
+@media screen and (max-width: 780px) {
+  .dialog-box {
+    height: fit-content;
+    padding: 50px 0px;
+    flex-direction: column;
+    box-shadow: unset;
+  }
+
+  .dialog-title {
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
+
+  .dialog-text {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: evw;
+  }
+
+  .dialog-buttons {
+    width: 30vw;
+  }
+
+  .contact-button,
+  .location-button {
+    font-size: 2vw;
+    line-height: 8vw;
+    height: 8vw;
+  }
+  .location-button {
+    height: fit-content;
+    line-height: 8vw;
+    height: 8vw;
+  }
+}
+
+@media screen and (max-width: 735px) {
   .nav-button-oc {
     display: block;
     text-align: center;
@@ -360,8 +400,7 @@ p {
   .main-photos {
     max-width: 70%;
   }
-
-
+  
   .dialog-box {
     height: fit-content;
     padding: 50px 0px;

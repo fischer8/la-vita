@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 import FooterArticle from './FooterArticle';
 import FooterNav from './FooterNav';
 
@@ -17,5 +17,5 @@ export default class Footer extends Component {
 }
 
 Footer.propTypes = {
-  logo: PropTypes.string.isRequired
+  logo: string.isRequired
 }
