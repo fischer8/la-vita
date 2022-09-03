@@ -3,6 +3,15 @@
   color: whitesmoke;
 }
 
+ul {
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  width: 23%;
+}
+
 body {
   background: linear-gradient(72deg, #156fbb 1%, #43bbed 40%, #156fbb 90%);
   font-family: "Poppins", Sans-serif;
@@ -13,8 +22,9 @@ body {
   right: 1vw;
   width: 10vh;
   bottom: 5vw;
-  z-index: 100;
+  z-index: 10;
   cursor: pointer;
+  opacity: 0.9;
 }
 
 .nav-button-oc {
@@ -28,16 +38,8 @@ body {
 }
 
 .close-nav-button {
-  position: fixed;
-  right: 2vw;
-  top: 2vh;
-  font-size: 4vw;
-  height: 7vw;
-  width: 7vw;
-  text-align: center;
-  line-height: 7vw;
-  cursor: pointer;
-  background-color: rgba(43, 89, 102, 0.452);
+  all: unset;
+  display: none;
 }
 
 .side-nav ul {
@@ -70,10 +72,9 @@ header {
 .top-logo {
   position: absolute;
   width: 25%;
-  z-index: 99;
 }
 
-.nav-container {
+.nav-container ul {
   width: 60%;
   font-size: 2vw;
   position: absolute;
@@ -81,13 +82,13 @@ header {
   justify-content: space-between;
   right: 4%;
   color: antiquewhite;
-  z-index: 99;
 }
+
 
 .nav-opts {
   text-align: center;
   line-height: 15vh;
-  width: 23%;
+  width: 100%;
   height: 15vh;
   cursor: pointer;
   font-size: 140%;
@@ -153,7 +154,6 @@ header {
   width: 42vw;
   color: aliceblue;
   font-weight: bolder;
-  z-index: 99;
   top: 50%;
   left: 6%;
 }
@@ -253,7 +253,6 @@ p {
   text-align: center;
   position: relative;
   height: fit-content;
-  /* transform: translateY(50%); */
   width: 23vw;
   box-sizing: border-box;
 }
@@ -295,6 +294,9 @@ p {
 }
 
 @media screen and (max-width: 780px) {
+  .zap-button {
+    z-index: 1;
+  }
   .dialog-box {
     height: fit-content;
     padding: 50px 0px;
@@ -331,6 +333,9 @@ p {
     line-height: 8vw;
     height: 8vw;
   }
+  .footer {
+    z-index: 2;
+  }
 }
 
 @media screen and (max-width: 735px) {
@@ -366,10 +371,25 @@ p {
     background-color: #238192ff;
   }
 
+  .close-nav-button {
+    position: fixed;
+    display: block;
+    right: 2vw;
+    z-index: 5;
+    top: 2vh;
+    font-size: 4vw;
+    height: 7vw;
+    width: 7vw;
+    text-align: center;
+    line-height: 7vw;
+    cursor: pointer;
+    z-index: 124;
+    background-color: rgba(43, 89, 102, 0.452);
+  }
+
   .top-logo {
     position: relative;
     width: 70%;
-    z-index: 99;
     left: 50%;
     margin-bottom: 20px;
     transform: translateX(-50%);
@@ -476,8 +496,7 @@ p {
     position: fixed;
     right: 1vw;
     width: 14vw;
-    bottom: 5vw;
-    z-index: 100;
+    bottom: 7vw;
     cursor: pointer;
   }
   .nav-button-oc {

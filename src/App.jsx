@@ -9,6 +9,7 @@ export default class App extends Component {
     return (
       <Switch>
         <Route exact path='/' component={MainPage} />
+        <Route exact path='/home' component={MainPage} />
         <Route exact path='/sobre' component={About} />
         <Route path='*' component={NotFound}/>
       </Switch>
