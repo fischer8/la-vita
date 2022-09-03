@@ -210,7 +210,6 @@ p {
 }
 
 .footer-logo {
-  /* top: 50%; */
   max-width: 340px;
   width: 30%;
   object-fit: cover;
@@ -268,7 +267,6 @@ p {
 }
 
 .footer-nav-opts {
-  /* border: 1px solid red; */
   font-size: large;
   line-height: 40px;
 }
@@ -462,19 +460,15 @@ p {
     display: none;
   }
   .footer-nav-container {
-    /* border: 1px solid red; */
     margin: 10px 0px;
     width: 50vw;
-    /* margin: auto; */
   }
   .footer-nav ul{
-    /* border: 1px solid black; */
     justify-content: space-evenly;
     flex-direction: row;
     width: 100%;
   }
   .footer-nav-opts {
-    /* border: 1px solid red; */
     padding: 2vw;
   }
 }
