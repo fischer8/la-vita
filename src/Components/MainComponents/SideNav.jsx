@@ -7,7 +7,7 @@ export default class SideNav extends Component {
     return (
       <section>
         <span className='close-nav-button' onClick={this.props.handleChange}>x</span>
-        <Nav opts={opts} navclname='side-nav' optclname='side-nav-opts' />
+        <Nav opts={opts} navclname='side-nav' optclname='side-nav-opts'/>
       </section>
     );
   }

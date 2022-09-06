@@ -1,21 +1,20 @@
 import { Component } from 'react';
-import { string } from 'prop-types';
 import FooterArticle from './FooterArticle';
 import FooterNav from './FooterNav';
+import Copyright from './Copyright';
+import logo_img from '../../images/elementos/lavita_logo.webp';
 
 export default class Footer extends Component {
   render() {
-    const { logo } = this.props;
     return (
-      <footer className='footer'>
-        <img className='footer-logo' src={logo} alt='' />
-        <FooterArticle />
-        <FooterNav />
+      <footer>
+        <article className='footer'>
+          <img className='footer-logo' src={logo_img} alt='' />
+          <FooterArticle />
+          <FooterNav />
+        </article>
+          <Copyright />
       </footer>
     );
   }
-}
-
-Footer.propTypes = {
-  logo: string.isRequired
 }

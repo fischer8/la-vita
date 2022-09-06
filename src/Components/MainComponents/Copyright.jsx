@@ -5,7 +5,7 @@ export default class Copyright extends Component {
     return (
       <section className='copyright-container'>
         <h6 className='copyright-text'>
-          Copyright ©️ 2022 La Vita Todos direitos reservados.
+          Copyright &nbsp;©️ &nbsp;2022 &nbsp;La Vita &nbsp;Todos &nbsp;direitos &nbsp;reservados.
         </h6>
       </section>
     );
